@@ -1,0 +1,14 @@
+const int soundpin = A0;
+
+void setup()
+{
+    pinMode(soundpin, OUTPUT);
+    Serial.begin(9600); // open serial port, set the baud rate to 9600 bps
+}
+void loop()
+{
+    int val;
+    val = analogRead(soundpin);
+    Particle.publish("sound",String(val), PRIVATE);
+    delay(10000);
+}
