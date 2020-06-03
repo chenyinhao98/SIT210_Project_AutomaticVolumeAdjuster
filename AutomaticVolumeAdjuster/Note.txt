@@ -1,0 +1,25 @@
+Note:
+
+Name: Yinhao Chen 
+ID: 218735269
+Email: chenyinha@deakin.edu.au
+
+Automatic Volume Adjuster Catalog 
+
+	Folder GPS
+		GPSPublish.py:    	 publish GPS data in serial mode and send GPS data onto Thingspeak platform
+		GoogleMap.html:   	 plot current location and around noise level with google service and GPS data 
+
+	Folder MediaAI
+		MediaAI.py: 	  	 automatic volume adjuster music player MediaAI receive sound data from Thingspeak
+		Folder Resources: 	 All media and images use in MediaAI
+
+	Folder SoundSensor
+		SoundSensorPi.py:        detect sound appearance on Pi (Abandoned in Project)
+		SoundSensorParticle.txt: publish the analog read value of sound sensor
+	Folder MQTT
+		mqtt_client.py: 	 subscribe to MQTT channel and waiting for publish (Abandoned in Project)
+		mqtt_publish.py:  	 publish text into MQTT channel so every subscriber in the channel can receive (Abandoned in Project)
+	Folder Thingspeak
+		Receive.py:		 Receive last entity in certain field from Thingspeak channel (Included in MediaAI.py)
+		
